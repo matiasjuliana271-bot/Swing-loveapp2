@@ -5,41 +5,128 @@
   <title>🔥 Swing Love 🔥</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="style.css">
-  <link rel="manifest" href="manifest.json">
+  <!-- Estilo -->
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(180deg, #12001f, #2a0d4f);
+      color: #fff;
+    }
+
+    header {
+      text-align: center;
+      padding: 18px;
+      font-size: 24px;
+      font-weight: bold;
+      border-bottom: 2px solid #ff0055;
+      background: rgba(0,0,0,0.3);
+    }
+
+    .container {
+      padding: 20px;
+      max-width: 500px;
+      margin: auto;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.08);
+      border-radius: 18px;
+      padding: 20px;
+      margin-bottom: 20px;
+      text-align: center;
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    }
+
+    .card h2 {
+      color: #ff0055;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 15px;
+      line-height: 1.5;
+      opacity: 0.9;
+    }
+
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 16px;
+      margin-top: 12px;
+      background: linear-gradient(90deg, #ff0055, #ff3366);
+      border-radius: 30px;
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .btn:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 15px rgba(255,0,85,0.7);
+    }
+
+    footer {
+      text-align: center;
+      font-size: 12px;
+      opacity: 0.6;
+      padding: 15px;
+    }
+  </style>
 </head>
+
 <body>
 
-  <header class="topo">
+  <header>
     🔥 Swing Love 🔥
   </header>
 
-  <main class="container">
+  <div class="container">
 
+    <!-- Bem-vindo -->
     <div class="card">
       <h2>Bem-vindo</h2>
       <p>
         Comunidade exclusiva para casais e solteiros.<br>
-        Ambiente respeitoso, sensual e seguro.
+        Ambiente respeitoso, sensual e seguro.<br>
+        🔞 Apenas maiores de 18 anos.
       </p>
     </div>
 
+    <!-- Entrar no WhatsApp -->
     <div class="card">
       <h2>Entrar no Grupo</h2>
-      <a class="btn" href="https://wa.me/+55 21 99930-3395" target="_blank">
-        Entrar no WhatsApp
+      <a class="btn" href="https://wa.me/5521999303395" target="_blank">
+        💬 Entrar no WhatsApp
       </a>
     </div>
 
+    <!-- Menu -->
     <div class="card">
       <h2>Menu</h2>
 
-      <button class="btn">📜 Regras do Grupo</button>
-      <button class="btn">💎 Área VIP</button>
-      <button class="btn">🔥 Eventos</button>
+      <button class="btn" onclick="alert('Regras: respeito, consentimento e discrição.')">
+        📜 Regras do Grupo
+      </button>
+
+      <button class="btn" onclick="alert('Área VIP em breve 🔥')">
+        💎 Área VIP
+      </button>
+
+      <button class="btn" onclick="alert('Eventos exclusivos em breve 😈')">
+        🔥 Eventos
+      </button>
     </div>
 
-  </main>
+  </div>
+
+  <footer>
+    © Swing Love • Comunidade +18
+  </footer>
 
 </body>
-    </html>
+  </html>
